@@ -1,31 +1,45 @@
-# Files in the config/locales directory are used for internationalization and
-# are automatically loaded by Rails. If you want to use locales other than
-# English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more about the API, please read the Rails Internationalization guide
-# at https://guides.rubyonrails.org/i18n.html.
-#
-# Be aware that YAML interprets the following case-insensitive strings as
-# booleans: `true`, `false`, `on`, `off`, `yes`, `no`. Therefore, these strings
-# must be quoted to be interpreted as strings. For example:
-#
-#     en:
-#       "yes": yup
-#       enabled: "ON"
-
 en:
-  hello: "Hello world"
+  hello: 'Hello world'
+  nav:
+    home: 'Home'
+    experience: 'Experience'
+    projects: 'Projects'
+    contact: 'Contact'
+  home:
+    title: 'Oscar Developer'
+    description: 'Passionate Ruby on Rails developer with over 4 years of experience, I specialize in building robust and scalable web applications. Always eager to learn and adapt to new technologies.'
+    contact_button: 'Contact Me'
+  footer:
+    copyright: '© 2025 Oscar Developer. All rights reserved.'
+  experience:
+    title: 'Experience'
+    items:
+      - title: 'Ruby on Rails Developer'
+        company: 'Fuzati'
+        period: 'August 2024 - Present'
+        description: "Development of the ARK project, an application that helps Dioceses and schools test students and generate performance reports across various US states. Key achievements:\n\n• Maintained and improved a Ruby on Rails application, implementing features using Devise, Impersonate, Ransack, and Prawn\n• Developed unit tests with RSpec for controllers, models, and services\n• Optimized client-side interactions using jQuery, vanilla JavaScript, and React.js components\n• Managed deployments and infrastructure using Cloud66\n• Worked with Agile SCRUM methodology"
+      - title: 'Ruby on Rails Developer'
+        company: 'GFT Technologies LATAM'
+        period: 'March 2023 - August 2024'
+        description: "Development of electronic invoicing API in Colombia (CDP Project). Key achievements:\n\n• Developed a comprehensive Ruby on Rails API for electronic invoicing management\n• Optimized PostgreSQL database improving query performance\n• Optimized background job processing using Sidekiq and Redis\n• Managed containers with Docker for development and deployment\n• Collaborated using Git and Azure DevOps"
+      - title: 'Ruby on Rails Developer'
+        company: 'ISWO Intelligence Software'
+        period: 'October 2021 - March 2023'
+        description: "Development of web application for internal documentation management and ISO certification. Key achievements:\n\n• Developed and maintained robust web applications using Ruby on Rails\n• Implemented unit tests with Minitest achieving 85% coverage\n• Enhanced frontend interactivity using Stimulus\n• Integrated React.js components into existing Rails applications\n• Styled and enhanced UI using CSS and Sass"
+      - title: 'Ruby on Rails Developer'
+        company: 'Freelance'
+        period: 'January 2020 - October 2021'
+        description: "Development of various freelance projects. Key achievements:\n\n• Developed Ruby on Rails applications implementing microservices architecture\n• Managed asynchronous jobs with Redis and Sidekiq\n• Implemented real-time communication using Websockets\n• Developed landing pages using React.js, Bootstrap, and TailwindCSS\n• Led technical design and implementation phases of projects"
+  projects:
+    title: 'Projects'
+    items:
+      - title: 'Project Name 1'
+        description: 'A detailed description of the project, explaining its main features and the impact it had.'
+        image: '/path/to/project1-image.jpg'
+        technologies: ['Ruby on Rails', 'React', 'PostgreSQL', 'TailwindCSS']
+        link: 'https://project1.com'
+      - title: 'Project Name 2'
+        description: 'Description of the second project, highlighting the challenges overcome and the solutions implemented.'
+        image: '/path/to/project2-image.jpg'
+        technologies: ['Ruby on Rails', 'Hotwire', 'Redis', 'Bootstrap']
+        link: 'https://project2.com'

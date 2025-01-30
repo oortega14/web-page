@@ -3,12 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/*
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+/* Pure CSS */ 
+
+#app {
+  width: 100%;
+  min-height: 100vh;
 }
 
-*/
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  transform: scale(1.5);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.5) 0%, rgba(239, 68, 68, 0.2) 70%, transparent 100%);
+  box-shadow: 0 0 20px 10px rgba(239, 68, 68, 0.3);
+}
