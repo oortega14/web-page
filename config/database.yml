@@ -82,4 +82,9 @@ test:
 production:
   <<: *default
   url: <%= ENV['DATABASE_URL'] %>
+
+# Agregamos la configuración para Action Cable
+cable:
+  <<: *default
+  url: <%= ENV['DATABASE_URL'] %>
 # =end
