@@ -1,7 +1,9 @@
+import { IconMail } from '@tabler/icons-react';
+import { IconBrandLinkedin } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { LinkedinIcon as LinkedIn, Mail } from 'lucide-react';
-import profileImage from '../../../app/assets/images/foto_perfil.webp';
+
+
 
 export const Main = ({ translations }: { translations: any }) => {
   const [blinkPosition, setBlinkPosition] = useState(-1);
@@ -43,7 +45,7 @@ export const Main = ({ translations }: { translations: any }) => {
         animate='visible'>
         <div className='flex items-center mb-6'>
           <motion.img
-            src={profileImage}
+            src={'/images/foto_perfil.webp'}
             alt='Avatar'
             className='w-24 h-24 rounded-full mr-6'
             variants={itemVariants}
@@ -77,7 +79,7 @@ export const Main = ({ translations }: { translations: any }) => {
             className='border-blue-800 border-2 hover:bg-blue-800 text-white font-bold py-1 px-2 md:py-2 md:px-4 rounded transition-colors inline-flex items-center group'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}>
-            <LinkedIn className='mr-2 text-blue-800 group-hover:text-white transition-colors' />
+            <IconBrandLinkedin className='mr-2 text-blue-800 group-hover:text-white transition-colors' />
             LinkedIn
           </motion.a>
           <motion.a
@@ -85,7 +87,7 @@ export const Main = ({ translations }: { translations: any }) => {
             className='border-red-800 border-2 hover:bg-red-800 text-white font-bold py-1 px-2 md:py-2 md:px-4 rounded transition-colors inline-flex items-center group'
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}>
-            <Mail className='mr-2 text-red-800 group-hover:text-white transition-colors' />
+            <IconMail className='mr-2 text-red-800 group-hover:text-white transition-colors' />
             Email Me
           </motion.a>
         </motion.div>

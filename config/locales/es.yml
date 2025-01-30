@@ -1,4 +1,5 @@
 es:
+  hello: 'Hola mundo'
   nav:
     home: 'Inicio'
     experience: 'Experiencia'
@@ -6,79 +7,79 @@ es:
     contact: 'Contacto'
   home:
     title: 'Oscar Developer'
-    description: 'Desarrollador Ruby on Rails apasionado por crear aplicaciones web robustas y escalables. Siempre listo para aprender y adaptarse a nuevas tecnologías.'
+    description: 'Desarrollador Ruby on Rails con más de 4 años de experiencia, especializado en la creación de aplicaciones web robustas y escalables. Siempre dispuesto a aprender y adaptarse a nuevas tecnologías.'
     contact_button: 'Contáctame'
   footer:
     copyright: '© 2025 Oscar Developer. Todos los derechos reservados.'
   experience:
     title: 'Experiencia'
     items:
-      - title: 'Ruby on Rails Developer'
+      - title: 'Desarrollador Ruby on Rails (Monolítico)'
         company: 'Fuzati'
         period: 'Agosto 2024 - Presente'
-        description: "Desarrollo del proyecto ARK, una aplicación que ayuda a Diócesis y escuelas a evaluar estudiantes y generar reportes de rendimiento en varios estados de USA. Logros principales:\n\n• Mantuve y mejoré una aplicación Ruby on Rails, implementando características usando Devise, Impersonate, Ransack y Prawn\n• Desarrollé pruebas unitarias con RSpec para controllers, models y services\n• Optimicé interacciones del cliente usando jQuery, JavaScript vanilla y componentes React.js\n• Gestioné despliegues e infraestructura usando Cloud66\n• Trabajé con metodología Agile SCRUM"
-        companyLogo: '/images/fuzati.png'
+        description: "Desarrollo del proyecto ARK, una aplicación que ayuda a Diocesis y escuelas a probar estudiantes y generar informes de rendimiento en varios estados de EE. UU. Logros clave:\n\n• Mantuvo y mejoró una aplicación Ruby on Rails, implementando características utilizando Devise, Impersonate, Ransack y Prawn\n• Desarrolló pruebas unitarias con RSpec para controladores, modelos y servicios\n• Optimizó las interacciones del lado del cliente utilizando jQuery, JavaScript vanilla y componentes de React.js\n• Administró despliegues y infraestructura utilizando Cloud66\n• Trabajó con metodología Agile SCRUM"
+        companyLogoKey: 'fuzati_logo'
         technologies:
           - name: 'Ruby on Rails'
-            logo: '/images/ruby.png'
-          - name: 'React'
-            logo: '/images/react.png'
+          - name: 'Jquery'
           - name: 'PostgreSQL'
-            logo: '/images/postgresql.png'
-          - name: 'TailwindCSS'
-            logo: '/images/tailwind.png'
-      - title: 'Ruby on Rails Developer'
+          - name: 'Bootstrap'
+          - name: 'Git'
+      - title: 'Desarrollador Ruby on Rails (API)'
         company: 'GFT Technologies LATAM'
         period: 'Marzo 2023 - Agosto 2024'
-        description: "Desarrollo de API para facturación electrónica en Colombia (Proyecto CDP). Logros principales:\n\n• Desarrollé una API completa en Ruby on Rails para gestión de facturación electrónica\n• Optimicé base de datos PostgreSQL mejorando rendimiento de consultas\n• Optimicé procesamiento de trabajos en segundo plano con Sidekiq y Redis\n• Gestioné contenedores con Docker para desarrollo y despliegue\n• Colaboré usando Git y Azure DevOps"
-        companyLogo: '/images/gft.png'
+        description: "Desarrollo de la API de facturación electrónica en Colombia (Proyecto CDP). Logros clave:\n\n• Desarrolló una API Ruby on Rails para la gestión de facturas electrónicas\n• Optimizó la base de datos PostgreSQL mejorando el rendimiento de las consultas\n• Optimizó el procesamiento de trabajos en segundo plano utilizando Sidekiq y Redis\n• Administró contenedores con Docker para desarrollo y despliegue\n• Colaboró utilizando Git y Azure DevOps"
+        companyLogoKey: 'gft_logo'
         technologies:
           - name: 'Ruby on Rails'
-            logo: '/images/ruby.png'
           - name: 'PostgreSQL'
-            logo: '/images/postgresql.png'
           - name: 'Sidekiq'
-            logo: '/images/sidekiq.png'
+          - name: 'Redis'
           - name: 'Docker'
-            logo: '/images/docker.png'
-      - title: 'Ruby on Rails Developer'
+          - name: 'Git'
+      - title: 'Desarrollador Ruby on Rails (Monolítico)'
         company: 'ISWO Intelligence Software'
         period: 'Octubre 2021 - Marzo 2023'
-        description: "Desarrollo de aplicación web para gestión de documentación interna y certificación ISO. Logros principales:\n\n• Desarrollé y mantuve aplicaciones web robustas en Ruby on Rails\n• Implementé pruebas unitarias con Minitest logrando 85% de cobertura\n• Mejoré interactividad frontend usando Stimulus\n• Integré componentes React.js en aplicaciones Rails existentes\n• Estilizado y mejora de UI usando CSS y Sass"
-        companyLogo: '/images/iswo.png'
+        description: "Desarrollo de una aplicación web para la gestión de documentación interna y certificación ISO. Logros clave:\n\n• Desarrolló y mantuvo aplicaciones web robustas utilizando Ruby on Rails\n• Implementó pruebas unitarias con Minitest alcanzando el 85% de cobertura\n• Mejoró la interacción del frontend utilizando Stimulus\n• Integró componentes de React.js en aplicaciones Rails existentes\n• Mejoró y estilizó la interfaz de usuario utilizando CSS y Sass"
+        companyLogoKey: 'iswo_logo'
         technologies:
           - name: 'Ruby on Rails'
-            logo: '/images/ruby.png'
-          - name: 'PostgreSQL'
-            logo: '/images/postgresql.png'
-          - name: 'Stimulus'
-            logo: '/images/stimulus.png'
           - name: 'React'
-            logo: '/images/react.png'
-      - title: 'Ruby on Rails Developer'
+          - name: 'PostgreSQL'
+          - name: 'Bootstrap'
+          - name: 'Git'
+          - name: 'Sidekiq'
+          - name: 'Redis'
+      - title: 'Desarrollador Ruby on Rails (Ambos)'
         company: 'Freelance'
         period: 'Enero 2020 - Octubre 2021'
-        description: "Desarrollo de diversos proyectos como freelance. Logros principales:\n\n• Desarrollé aplicaciones en Ruby on Rails implementando arquitectura de microservicios\n• Gestioné trabajos asíncronos con Redis y Sidekiq\n• Implementé comunicación en tiempo real usando Websockets\n• Desarrollé landing pages usando React.js, Bootstrap y TailwindCSS\n• Lideré fases de diseño técnico e implementación de proyectos"
-        companyLogo: '/images/freelance.png'
+        description: "Desarrollo de varios proyectos freelance. Logros clave:\n\n• Desarrolló aplicaciones Ruby on Rails implementando arquitectura de microservicios\n• Administró trabajos asincrónicos con Redis y Sidekiq\n• Implementó comunicación en tiempo real utilizando Websockets\n• Desarrolló páginas de aterrizaje utilizando React.js, Bootstrap y TailwindCSS\n• Lideró fases de diseño técnico y implementación de proyectos"
+        companyLogoKey: 'iswo_logo'
         technologies:
           - name: 'Ruby on Rails'
-            logo: '/images/ruby.png'
+          - name: 'React'
           - name: 'PostgreSQL'
-            logo: '/images/postgresql.png'
-          - name: 'Redis'
-            logo: '/images/redis.png'
+          - name: 'TailwindCSS'
+          - name: 'Git'
           - name: 'Sidekiq'
-            logo: '/images/sidekiq.png'
+          - name: 'Redis'
+          - name: 'Docker'
+          - name: 'Websockets'
   projects:
     title: 'Proyectos'
     items:
-      - title: 'Nombre del Proyecto 1'
-        description: 'Una descripción detallada del proyecto, explicando sus características principales y el impacto que tuvo.'
-        image: '/path/to/project1-image.jpg'
-        technologies: ['Ruby on Rails', 'React', 'PostgreSQL', 'TailwindCSS']
-        link: 'https://proyecto1.com'
-      - title: 'Nombre del Proyecto 2'
-        description: 'Descripción del segundo proyecto, destacando los desafíos superados y las soluciones implementadas.'
-        image: '/path/to/project2-image.jpg'
-        technologies: ['Ruby on Rails', 'Hotwire', 'Redis', 'Bootstrap']
-        link: 'https://proyecto2.com'
+      - title: 'ISWO Academy'
+        description: 'Aplicación para crear y gestionar cursos para la ISWO Academy'
+        image: '/images/iswo_academy.png'
+        technologies: ['Ruby on Rails', 'Next.js', 'Zod', 'PostgreSQL', 'TailwindCSS']
+        link: 'https://www.iswoacademy.com'
+      - title: 'Luminous Rails UI'
+        description: 'Librería de interfaz de usuario para Ruby on Rails creada con TailwindCSS y view-components gem'
+        image: '/images/luminous_rails_ui.png'
+        technologies: ['Ruby on Rails', 'TailwindCSS']
+        link: 'https://github.com/oortega14/luminous_rails_ui'
+      - title: 'JSON API Responses'
+        description: 'Gema para generar respuestas JSON API para Ruby on Rails'
+        image: '/images/jsonapi_responses.webp'
+        technologies: ['Ruby on Rails', 'Ruby']
+        link: 'https://github.com/oortega14/jsonapi_responses'

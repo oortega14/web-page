@@ -1,12 +1,10 @@
 import { Head } from '@inertiajs/react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import Header from '../containers/Header';
 import { Main } from '../containers/Main';
 import { Experience } from '../containers/Experience';
 import { Projects } from '../containers/Projects';
 import { Footer } from '../containers/Footer';
-
-
 
 interface HomeProps {
   currentLocale: string;
@@ -27,8 +25,13 @@ interface HomeProps {
       items: Array<{
         title: string;
         company: string;
+        companyLogoKey: string;
         period: string;
         description: string;
+        technologies: Array<{
+          name: string;
+          logo: string;
+        }>;
       }>;
     };
     projects: {
@@ -67,8 +70,6 @@ export default function Home({ currentLocale, translations }: HomeProps) {
   return (
     <>
       <Head title='index' />
-
-      {/* Cursor personalizado más grande y rojo */}
       <div
         className='custom-cursor fixed w-12 h-12 rounded-full pointer-events-none z-50 mix-blend-screen'
         style={{

@@ -1,8 +1,9 @@
-import { GemIcon as Ruby } from 'lucide-react';
+
 import { FC, useState } from 'react';
 import { router } from '@inertiajs/react';
 import { LanguageSelector } from '../components/LanguageSelector';
 import { MobileMenu } from '../components/MobileMenu';
+import { Icon123 } from '@tabler/icons-react';
 
 interface HeaderProps {
   currentLocale?: string;
@@ -37,7 +38,7 @@ const Header: FC<HeaderProps> = ({ currentLocale = 'en', translations }) => {
     <header className='fixed top-0 left-0 right-0 bg-black/30 backdrop-blur-lg z-50 border-b border-white/10'>
       <div className='container mx-auto px-4 py-4 flex justify-between items-center'>
         <div className='flex items-center'>
-          <Ruby className='w-6 h-6 sm:w-8 sm:h-8 mr-2 text-red-500' />
+          <Icon123 className='w-6 h-6 sm:w-8 sm:h-8 mr-2 text-red-500' />
           <span className='text-xl sm:text-2xl md:text-4xl font-bold text-white'>
             Oscar Dev
           </span>
