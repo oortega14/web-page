@@ -33,23 +33,19 @@ RUN apt-get update -qq && \
     apt-get install --no-install-recommends -y build-essential git libpq-dev pkg-config nodejs npm && \
     rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+# Copy application code first
+COPY . .
+
 # Install application gems
-COPY Gemfile Gemfile.lock ./
 RUN bundle install && \
     rm -rf ~/.bundle/ "${BUNDLE_PATH}"/ruby/*/cache "${BUNDLE_PATH}"/ruby/*/bundler/gems/*/.git && \
     bundle exec bootsnap precompile --gemfile
 
-# Install Node.js dependencies and build Vite assets
-COPY package.json package-lock.json ./
+# Install Node.js dependencies
 RUN npm install
-COPY vite.config.js ./
-COPY resources/ ./resources/
 
 # Build Vite assets
 RUN npm run build
-
-# Copy application code
-COPY . .
 
 # Precompile bootsnap code for faster boot times
 RUN bundle exec bootsnap precompile app/ lib/
