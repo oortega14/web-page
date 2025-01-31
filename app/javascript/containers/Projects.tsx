@@ -36,7 +36,7 @@ export const Projects: FC<ProjectProps> = ({ translations }) => {
   };
 
   return (
-    <section id='projects' className='py-20 px-10'>
+    <section id='projects' className='py-20 px-10 text-white'>
       <h2 className='text-3xl font-bold mb-8'>
         {translations?.projects?.title || 'Projects'}
       </h2>

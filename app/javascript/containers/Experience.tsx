@@ -22,7 +22,7 @@ interface ExperienceProps {
 
 export const Experience: FC<ExperienceProps> = ({ translations }) => {
   return (
-    <section id="experience" className="py-20 px-4 md:px-10">
+    <section id="experience" className="py-20 px-4 md:px-10 text-white">
       <h2 className="text-3xl md:text-4xl font-bold mb-8">{translations.experience.title}</h2>
       <div className="relative">
         {/* Línea roja vertical, visible solo en md y superiores */}

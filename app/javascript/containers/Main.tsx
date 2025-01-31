@@ -51,7 +51,7 @@ export const Main = ({ translations }: { translations: any }) => {
             variants={itemVariants}
           />
           <motion.h1
-            className='text-4xl sm:text-5xl font-bold'
+            className='text-4xl sm:text-5xl font-bold text-white'
             variants={itemVariants}>
             {translations.home.title
               .split('')
@@ -67,13 +67,13 @@ export const Main = ({ translations }: { translations: any }) => {
           </motion.h1>
         </div>
 
-        <motion.p className='text-lg mb-6' variants={itemVariants}>
+        <motion.p className='text-lg mb-6 text-white' variants={itemVariants}>
           {translations.home.description}
         </motion.p>
 
         <motion.div className='flex space-x-4' variants={itemVariants}>
           <motion.a
-            href={translations.home.linkedin_url}
+            href='https://www.linkedin.com/in/oscardeveloper/'
             target='_blank'
             rel='noopener noreferrer'
             className='border-blue-800 border-2 hover:bg-blue-800 text-white font-bold py-1 px-2 md:py-2 md:px-4 rounded transition-colors inline-flex items-center group'

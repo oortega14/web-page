@@ -69,17 +69,18 @@ export default function Home({ currentLocale, translations }: HomeProps) {
 
   return (
     <>
-      <Head title='index' />
+      <Head title={translations.home.title} />
+      <div className='fixed top-0 left-0 right-0 bottom-0 min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]' />
       <div
-        className='custom-cursor fixed w-12 h-12 rounded-full pointer-events-none z-50 mix-blend-screen'
+        className='custom-cursor fixed w-12 h-12 rounded-full pointer-events-none z-[9999] mix-blend-screen'
         style={{
           background:
-            'radial-gradient(circle, rgba(234, 51, 51, 0.5) 0%, rgba(234, 51, 78, 0.2) 70%, transparent 100%)',
-          boxShadow: '0 0 20px 10px rgba(234, 51, 112, 0.3)',
+            'radial-gradient(circle, rgba(120, 119, 198, 0.5) 0%, rgba(120, 119, 198, 0.2) 70%, transparent 100%)',
+          boxShadow: '0 0 20px 10px rgba(120, 119, 198, 0.3)',
         }}
       />
 
-      <div className='min-h-screen m-0 p-0 bg-black text-white cursor-none'>
+      <div className='relative z-10'>
         <Header currentLocale={currentLocale} translations={translations} />
         <Main translations={translations} />
         <Experience translations={translations} />

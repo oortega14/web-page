@@ -31,7 +31,7 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-2 py-2 w-24 bg-black/80 backdrop-blur-lg rounded shadow-xl border border-white/10">
+        <div className="absolute right-0 mt-2 py-2 w-24 bg-black/80 backdrop-blur-lg rounded shadow-xl border border-white/10 text-white">
           <button
             onClick={() => handleLocaleChange("es")}
             className={`block w-full text-left px-4 py-2 hover:bg-red-500/50 transition-colors ${
